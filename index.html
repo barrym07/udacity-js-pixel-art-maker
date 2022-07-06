@@ -9,12 +9,13 @@
     <h1>Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
+    <!-- Added max='50' to meet the Criteria "The user can create a canvas of any (reasonable) size." -->
     <form id="sizePicker">
         Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        <input type="number" id="inputHeight" name="height" min="1" max="50" value="10">
         Grid Width:
-        <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <input type="submit">
+        <input type="number" id="inputWidth" name="width" min="1" max="50" value="10">
+        <input value="submit" type="submit" id="grid-submit">
     </form>
 
     <h2>Pick A Color</h2>
@@ -23,6 +24,7 @@
     <h2>Design Canvas</h2>
     <table id="pixelCanvas"></table>
 
-    <script src="designs.js"></script>
+    <!-- Renamed from designs to script to match the rubric -->
+    <script src="script.js"></script>
 </body>
 </html>
